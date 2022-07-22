@@ -1,0 +1,44 @@
+.booking__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/booking_bg_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.booking__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 40px;
+}
+
+.booking__header {
+  margin-bottom: 25px;
+  width: 194px;
+  height: 49px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #011C40;
+}
+
+.booking__text {
+  margin: 0;
+  width: 257px;
+  height: 56px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #011C40;
+}

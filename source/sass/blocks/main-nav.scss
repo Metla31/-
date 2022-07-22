@@ -1,0 +1,21 @@
+.main-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 56px;
+  background-color: transparent;
+}
+
+.main-nav--opened {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.main-nav--closed {
+  display: none;
+}

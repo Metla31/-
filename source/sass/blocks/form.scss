@@ -1,0 +1,109 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 65px;
+  width: 290px;
+  min-height: 460px;
+  background-color: #011C40;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  color: white;
+}
+
+.form__header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 214px;
+  min-height: 63px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.form__input {
+  border: 0;
+  width: 230px;
+  height: 43px;
+  background-color: #F9FBFD;
+  margin-bottom: 20px;
+  padding: 11px 0;
+  padding-left: 25px;
+}
+
+.form__input::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.form__input-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.form__checkbox {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #F9FBFD;
+  margin-right: 8px;
+}
+
+.form__input-checkbox:checked + .form__checkbox::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 10px;
+  height: 6px;
+  background-image: url("/img/svg/check_form.svg");
+  background-position: center;
+}
+
+.form__checkbox-text {
+  width: 162px;
+  height: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 120%;
+  color: #F9FBFD;
+}
+
+.form__button {
+  display: block;
+  width: 230px;
+  height: 43px;
+  background-color: #F9FBFD;
+  border: 0;
+  margin-bottom: 40px;
+}
+
+.form__button-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011C40;
+}

@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 16px;
+}
+
+.social__link {
+  margin-right: 23px;
+}
+
+.social__link--facebook {
+  display: block;
+  width: 9px;
+  height: 16px;
+}
+
+.social__link--instagram {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.social__link--twitter {
+  display: block;
+  width: 16px;
+  height: 13px;
+}
