@@ -9,6 +9,7 @@
   font-size: 24px;
   line-height: 150%;
   color: black;
+  text-align: center;
 }
 
 .upcoming__card-wrapper {
@@ -43,4 +44,64 @@
   font-size: 18px;
   line-height: 150%;
   color: white;
+}
+
+@media (min-width: $vp-768) {
+  .upcoming__header {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    width: 281px;
+    font-size: 26px;
+  }
+
+  .upcoming__card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    width: 648px;
+    margin-bottom: 100px;
+  }
+
+  .upcoming__card {
+    width: 309px;
+    margin: 0;
+  }
+
+  .upcoming__card:last-child {
+    margin-bottom: 0;
+  }
+
+  .upcoming__link {
+    bottom: 35px;
+    left: 35px;
+  }
+}
+
+@media (min-width: $vp-1366) {
+  .upcoming__header {
+    margin-top: 120px;
+    width: 302px;
+    font-size: 28px;
+  }
+
+  .upcoming__card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 30px;
+    margin: 0 auto;
+    width: 1130px;
+    margin-bottom: 120px;
+  }
+
+  .upcoming__card {
+    width: 260px;
+  }
+
+  .upcoming__link {
+    bottom: 30px;
+    left: 30px;
+  }
 }

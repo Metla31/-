@@ -15,3 +15,25 @@
   margin-top: 40px;
   margin-bottom: 30px;
 }
+
+.footer-nav__list {
+  width: 285px;
+}
+
+@media (min-width: $vp-768) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    height: 120px;
+    width: 100%;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $vp-1366) {
+
+}
