@@ -12,43 +12,43 @@
     <!--header start-->
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__container">
-          <button class="page-header__toggle page-header__toggle--opened" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-            <div class="main-nav">
-              <a class="page-header__logo logo">
-                <img src="./img/svg/logo_header.svg" alt="логотип">
-              </a>
-              <ul class="main-nav__list main-nav__list--closed">
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--active">
-                    Преимущества
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="./catalog.html">
-                    Направления
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="./form.html">
-                    Ближайшие круизы
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">
-                    Контакты
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="page-header__nav-container page-header__nav-container--nojs">
+          <a>
+            <img src="./img/svg/logo_header.svg" class="page-header__logo" width="42" height="22" alt="логотип">
+          </a>
+          <nav class="main-nav main-nav--closed">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">
+                  Преимущества
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./catalog.html">
+                  Направления
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./form.html">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <button class="page-header__toggle page-header__toggle--opened" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </nav>
         </div>
-          <div class="page-header__info-wrapper">
-            <h1 class="page-header__header">Круизы в Антарктику </h1>
-            <p class="page-header__text">Волшебный мир айсбергов и пингвинов</p>
-          </div>
+        <div class="page-header__info-wrapper">
+          <h1 class="page-header__header">Круизы в Антарктику </h1>
+          <p class="page-header__text">Волшебный мир айсбергов и пингвинов</p>
         </div>
+      </div>
     </header>
     <!--header end-->
     <!--main start-->
@@ -192,7 +192,9 @@
               <p class="info__number-text">8-800-200-00-00</p>
             </div>
           </div>
-          <div id="map" class="info__map">
+          <div class="info__map">
+            <iframe class="info__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3409571449603!2d30.32236259834061!3d59.937420163736085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f95b28107%3A0xc42fdf5b93274878!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1658944010691!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
       </section>
@@ -201,12 +203,8 @@
     <!--footer start-->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo">
-          <picture>
-            <source media="(min-width: 1366px)" srcset="">
-            <source media="(min-width: 768px)" srcset="">
-            <img src="./img/svg/logo_footer.svg" alt="логотип" width="100%" height="100%">
-          </picture>
+        <a class="page-footer__logo">
+          <img src="./img/svg/logo_footer.svg" alt="логотип" width="100%" height="100%">
         </a>
         <div class="footer-nav">
           <ul class="footer-nav__list">
@@ -254,29 +252,29 @@
   <div class="modal__wrapper">
     <div class="modal__overlay" data-close-modal></div>
     <div class="modal__content">
-      <h1 class="modal__header">Круиз “Элайн”</h1>
+      <h3 class="modal__header">Круиз “Элайн”</h3>
       <ul class="modal__list">
         <li class="modal__item">
           <div class="modal__list-container">
-            <h2 class="modal__info-header">Маршрут</h2>
+            <h4 class="modal__info-header">Маршрут</h4>
             <p class="modal__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
           </div>
         </li>
         <li class="modal__item">
           <div class="modal__list-container">
-            <h2 class="modal__info-header">Порт отправления</h2>
+            <h4 class="modal__info-header">Порт отправления</h4>
             <p class="modal__info-text">Буэнос-Айрес</p>
           </div>
         </li>
         <li class="modal__item">
           <div class="modal__list-container">
-            <h2 class="modal__info-header">Продолжительность</h2>
+            <h4 class="modal__info-header">Продолжительность</h4>
             <p class="modal__info-text">20 дней</p>
           </div>
         </li>
         <li class="modal__item">
           <div class="modal__list-container">
-            <h2 class="modal__info-header">Цена</h2>
+            <h4 class="modal__info-header">Цена</h4>
             <p class="modal__info-text">от 14500 $</p>
           </div>
         </li>

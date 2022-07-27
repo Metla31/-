@@ -8,7 +8,7 @@
   align-items: flex-start;
   width: 320px;
   min-height: 283px;
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .page-footer__logo {
@@ -16,9 +16,6 @@
   margin-bottom: 30px;
 }
 
-.footer-nav__list {
-  width: 285px;
-}
 
 @media (min-width: $vp-768) {
   .page-footer__wrapper {
