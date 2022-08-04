@@ -18,32 +18,30 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-top: 65px;
-  margin-bottom: 40px;
+  margin-top: 39px;
+  margin-bottom: 46px;
 }
 
 .booking__header {
   margin-bottom: 25px;
   width: 194px;
   height: 49px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
-  color: #011C40;
+  color: $color-tangaroa;
 }
 
 .booking__text {
   margin: 0;
   width: 257px;
   height: 56px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #011C40;
+  color: $color-tangaroa;
 }
 
 @media (min-width: $vp-768) {
@@ -54,10 +52,11 @@
   .booking__info {
     width: 419px;
     min-height: 90px;
-    margin-top: 100px;
+    margin-top: 62px;
   }
 
   .booking__header {
+    margin-bottom: 30px;
     width: 419px;
     height: 25px;
     font-size: 34px;
@@ -68,7 +67,7 @@
     width: 352px;
     min-height: 40px;
     font-size: 18px;
-    margin-bottom: 60px;
+    margin-bottom: 2px;
   }
 }
 
@@ -85,25 +84,33 @@
     align-items: center;
     width: 1040px;
     min-height: 455px;
+    gap: 144px;
   }
 
   .booking__info {
-    width: 419px;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 493px;
+    height: 110px;
     min-height: 90px;
-    margin-top: 100px;
   }
 
   .booking__header {
-    width: 419px;
-    height: 25px;
-    font-size: 34px;
+    margin: 0;
+    margin-bottom: 30px;
+    width: 493px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
   }
 
   .booking__text {
     margin: 0;
-    width: 352px;
+    width: 400px;
     min-height: 40px;
     font-size: 18px;
-    margin-bottom: 60px;
+    text-align: left;
   }
 }

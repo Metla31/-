@@ -12,11 +12,11 @@
     <!--header start-->
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__nav-container page-header__nav-container--nojs">
+        <div class="page-header__nav-container">
           <a>
             <img src="./img/svg/logo_header.svg" class="page-header__logo" width="42" height="22" alt="логотип">
           </a>
-          <nav class="main-nav main-nav--closed">
+          <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link">
@@ -73,7 +73,7 @@
         <div class="benefits__wrapper">
           <h2 class="benefits__header">Преимущества</h2>
           <div class="benefits__card-wrapper">
-            <div class="benefits__card">
+            <div class="benefits__card benefits__card--liner">
               <svg class="benefits__card-image" width="21" height="26">
                 <use xlink:href="img/sprite_auto.svg#liner"></use>
               </svg>
@@ -83,7 +83,7 @@
                 и очередей и даст возможность насладиться видами и природой.
               </p>
             </div>
-            <div class="benefits__card">
+            <div class="benefits__card benefits__card--system">
               <svg class="benefits__card-image" width="33" height="19">
                 <use xlink:href="img/sprite_auto.svg#check_mark"></use>
               </svg>
@@ -93,7 +93,7 @@
                 Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.
               </p>
             </div>
-            <div class="benefits__card">
+            <div class="benefits__card benefits__card--zodiac">
               <svg class="benefits__card-image" width="38" height="13">
                 <use xlink:href="img/sprite_auto.svg#zodiac"></use>
               </svg>
@@ -110,36 +110,168 @@
         <h2 class="upcoming__header">Ближайшие круизы</h2>
         <div class="upcoming__card-wrapper">
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/astoria.jpg" alt="astoria" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Астория”</a>
+            <img class="upcoming__img" src="./img/astoria.jpg" srcset="./img/astoria@2x.jpg 2x" alt="astoria" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Aстория”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <ul class="upcoming__list">
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Маршрут</h4>
+                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                </li>
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Порт отправления</h4>
+                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                </li>
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Продолжительность</h4>
+                  <p class="upcoming__info-text">20 дней</p>
+                </li>
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Цена</h4>
+                  <p class="upcoming__info-text">от 14500 $</p>
+                </li>
+              </ul>
+              <a class="upcoming__link" href="#">
+                <span class="upcoming__link-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/mimion.jpg" alt="elaine" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Элайн”</a>
+            <img class="upcoming__img" src="./img/mimion.jpg" srcset="./img/mimion@2x.jpg 2x" alt="eline" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Элайн”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <ul class="upcoming__list">
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Маршрут</h4>
+                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                </li>
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Порт отправления</h4>
+                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                </li>
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Продолжительность</h4>
+                  <p class="upcoming__info-text">20 дней</p>
+                </li>
+                <li class="upcoming__item">
+                  <h4 class="upcoming__info-header">Цена</h4>
+                  <p class="upcoming__info-text">от 14500 $</p>
+                </li>
+              </ul>
+              <a class="upcoming__link" href="#">
+                <span class="upcoming__link-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/atlantis.jpg" alt="atlantis" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Атлантис”</a>
+            <img class="upcoming__img" src="./img/atlantis.jpg" srcset="./img/atlantis@2x.jpg 2x" alt="atlantis" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Атлантис”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h4 class="upcoming__info-header">Маршрут</h4>
+              <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h4 class="upcoming__info-header">Порт отправления</h4>
+              <p class="upcoming__info-text">Буэнос-Айрес</p>
+              <h4 class="upcoming__info-header">Продолжительность</h4>
+              <p class="upcoming__info-text">20 дней</p>
+              <h4 class="upcoming__info-header">Цена</h4>
+              <p class="upcoming__info-text">от 14500 $</p>
+              <a class="upcoming__link" href="#">
+                <span class="modal__btn-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/odysseus.jpg" alt="odysseus" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Одиссей”</a>
+            <img class="upcoming__img" src="./img/odysseus.jpg" srcset="./img/odysseus@2x.jpg 2x" alt="odysseus" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Одиссей”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h4 class="upcoming__info-header">Маршрут</h4>
+              <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h4 class="upcoming__info-header">Порт отправления</h4>
+              <p class="upcoming__info-text">Буэнос-Айрес</p>
+              <h4 class="upcoming__info-header">Продолжительность</h4>
+              <p class="upcoming__info-text">20 дней</p>
+              <h4 class="upcoming__info-header">Цена</h4>
+              <p class="upcoming__info-text">от 14500 $</p>
+              <a class="upcoming__link" href="#">
+                <span class="modal__btn-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/olympia.jpg" alt="olympia" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Олимпия”</a>
+            <img class="upcoming__img" src="./img/olympia.jpg" srcset="./img/olympia@2x.jpg 2x" alt="olympia" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Олимпия”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h4 class="upcoming__info-header">Маршрут</h4>
+              <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h4 class="upcoming__info-header">Порт отправления</h4>
+              <p class="upcoming__info-text">Буэнос-Айрес</p>
+              <h4 class="upcoming__info-header">Продолжительность</h4>
+              <p class="upcoming__info-text">20 дней</p>
+              <h4 class="upcoming__info-header">Цена</h4>
+              <p class="upcoming__info-text">от 14500 $</p>
+              <a class="upcoming__link" href="#">
+                <span class="modal__btn-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/aurora.jpg" alt="aurora" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Аврора”</a>
+            <img class="upcoming__img" src="./img/aurora.jpg" srcset="./img/aurora@2x.jpg 2x" alt="aurora" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Аврора”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h4 class="upcoming__info-header">Маршрут</h4>
+              <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h4 class="upcoming__info-header">Порт отправления</h4>
+              <p class="upcoming__info-text">Буэнос-Айрес</p>
+              <h4 class="upcoming__info-header">Продолжительность</h4>
+              <p class="upcoming__info-text">20 дней</p>
+              <h4 class="upcoming__info-header">Цена</h4>
+              <p class="upcoming__info-text">от 14500 $</p>
+              <a class="upcoming__link" href="#">
+                <span class="modal__btn-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/leonor.jpg" alt="leonor" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Леонор”</a>
+            <img class="upcoming__img" src="./img/leonor.jpg" srcset="./img/leonor@2x.jpg 2x" alt="leonor" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Леонор”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h4 class="upcoming__info-header">Маршрут</h4>
+              <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h4 class="upcoming__info-header">Порт отправления</h4>
+              <p class="upcoming__info-text">Буэнос-Айрес</p>
+              <h4 class="upcoming__info-header">Продолжительность</h4>
+              <p class="upcoming__info-text">20 дней</p>
+              <h4 class="upcoming__info-header">Цена</h4>
+              <p class="upcoming__info-text">от 14500 $</p>
+              <a class="upcoming__link" href="#">
+                <span class="modal__btn-text">Забронировать</span>
+              </a>
+            </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/mimion.jpg" alt="minion-1" width="100%" height="100%">
-            <a href="" class="upcoming__link">Круиз “Минион - 1”</a>
+            <img class="upcoming__img" src="./img/mimion.jpg" srcset="./img/mimion@2x.jpg 2x" alt="minion-1" width="100%" height="100%">
+            <h3 class="upcoming__img-header">Круиз “Минион - 1”</h3>
+            <div class="upcoming__hover-wrapper">
+              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h4 class="upcoming__info-header">Маршрут</h4>
+              <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+              <h4 class="upcoming__info-header">Порт отправления</h4>
+              <p class="upcoming__info-text">Буэнос-Айрес</p>
+              <h4 class="upcoming__info-header">Продолжительность</h4>
+              <p class="upcoming__info-text">20 дней</p>
+              <h4 class="upcoming__info-header">Цена</h4>
+              <p class="upcoming__info-text">от 14500 $</p>
+              <a class="upcoming__link" href="#">
+                <span class="modal__btn-text">Забронировать</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -167,7 +299,7 @@
             <label class="form__label-checkbox" for="bridge">
               <input class="form__input-checkbox visually-hidden" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
               <span class="form__checkbox"></span>
-              <span class="form__checkbox-text">Я согласен на обработку<br> моих персональных данных</span>
+              <span class="form__checkbox-text">Я согласен на обработку моих персональных данных</span>
             </label>
             <button class="form__button" type="submit"><span class="form__button-text">Оставить заявку</span></button>
           </form>
@@ -203,8 +335,8 @@
     <!--footer start-->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img src="./img/svg/logo_footer.svg" alt="логотип" width="100%" height="100%">
+        <a class="page-footer__link">
+          <img class="page-footer__logo" src="./img/svg/logo_footer.svg" alt="логотип" width="100%" height="100%">
         </a>
         <div class="footer-nav">
           <ul class="footer-nav__list">
@@ -224,17 +356,17 @@
         </div>
         <div class="page-footer__social social">
           <a href="https://facebook.com/" class="social__link social__link--facebook">
-            <svg class="social__logo" width="9" height="16">
+            <svg class="social__logo" width="100%" height="100%">
               <use xlink:href="img/sprite_auto.svg#facebook"></use>
             </svg>
           </a>
           <a href="https://www.instagram.com/" class="social__link social__link--instagram">
-            <svg class="social__logo" width="16" height="16">
+            <svg class="social__logo" width="100%" height="100%">
               <use xlink:href="img/sprite_auto.svg#instagram"></use>
             </svg>
           </a>
           <a href="https://twitter.com/" class="social__link social__link--twitter">
-            <svg class="social__logo" width="16" height="13">
+            <svg class="social__logo" width="100%" height="100%">
               <use xlink:href="img/sprite_auto.svg#twitter"></use>
             </svg>
           </a>
@@ -242,47 +374,33 @@
       </div>
     </footer>
     <!--footer end-->
+    <!--mobile menu start-->
+    <div class="mobile-nav">
+      <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__container">
+          <img src="./img/svg/logo_header_open.svg" alt="logotype" class="mobile-nav__logo">
+          <button class="mobile-nav__toggle" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="" class="mobile-nav__link">Преимущества </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="" class="mobile-nav__link">Направления </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="" class="mobile-nav__link">Ближайшие круизы</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="" class="mobile-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--mobile menu end-->
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
-
-
-<div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-  <div class="modal__wrapper">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__content">
-      <h3 class="modal__header">Круиз “Элайн”</h3>
-      <ul class="modal__list">
-        <li class="modal__item">
-          <div class="modal__list-container">
-            <h4 class="modal__info-header">Маршрут</h4>
-            <p class="modal__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
-          </div>
-        </li>
-        <li class="modal__item">
-          <div class="modal__list-container">
-            <h4 class="modal__info-header">Порт отправления</h4>
-            <p class="modal__info-text">Буэнос-Айрес</p>
-          </div>
-        </li>
-        <li class="modal__item">
-          <div class="modal__list-container">
-            <h4 class="modal__info-header">Продолжительность</h4>
-            <p class="modal__info-text">20 дней</p>
-          </div>
-        </li>
-        <li class="modal__item">
-          <div class="modal__list-container">
-            <h4 class="modal__info-header">Цена</h4>
-            <p class="modal__info-text">от 14500 $</p>
-          </div>
-        </li>
-      </ul>
-      <button class="modal__btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-        <span class="modal__btn-text">Забронировать</span>
-      </button>
-    </div>
-  </div>
-</div>
-

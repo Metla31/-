@@ -5,9 +5,9 @@
   margin-bottom: 65px;
   width: 290px;
   min-height: 460px;
-  background-color: #011C40;
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  color: white;
+  background-color: $color-tangaroa;
+  box-shadow: 0px 4px 45px $color-tangaroa-beta;
+  color: $color-alice-blue;
 }
 
 .form__header {
@@ -16,32 +16,30 @@
   text-align: center;
   width: 214px;
   min-height: 63px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
-  margin-top: 40px;
-  margin-bottom: 35px;
+  margin-top: 35px;
+  margin-bottom: 27px;
 }
 
 .form__input {
   border: 0;
   width: 230px;
   height: 43px;
-  background-color: #F9FBFD;
+  background-color: $color-alice-blue;
   margin-bottom: 20px;
-  padding: 11px 0;
-  padding-left: 25px;
+  padding: 12px 0;
+  padding-left: 16px;
 }
 
 .form__input::placeholder {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: rgba(1, 28, 64, 0.7);
+  color: $color-tangaroa-alfa;
 }
 
 .form__label-checkbox {
@@ -49,7 +47,7 @@
   align-items: center;
   width: 190px;
   height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-right: 40px;
 }
 
@@ -63,7 +61,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background-color: #F9FBFD;
+  background-color: $color-alice-blue;
   margin-right: 8px;
 }
 
@@ -80,45 +78,45 @@
 }
 
 .form__checkbox-text {
-  width: 162px;
+  width: 157px;
   height: 20px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 120%;
-  color: #F9FBFD;
+  color: $color-alice-blue;
 }
 
 .form__button {
   display: block;
   width: 230px;
   height: 43px;
-  background-color: #F9FBFD;
+  background-color: $color-alice-blue;
   border: 0;
   margin-bottom: 40px;
 }
 
 .form__button-text {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-tangaroa;
 }
 
 @media (min-width: $vp-768) {
   .form {
     width: 403px;
     height: 455px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 
   .form__header {
     width: 303px;
     min-height: 40px;
-    margin-top: 50px;
+    margin-top: 46px;
+    text-align: left;
+    margin-bottom: 29px;
   }
 
   .form__input {
@@ -143,6 +141,7 @@
   .form__checkbox {
     width: 18px;
     height: 18px;
+    margin-right: 6px;
   }
 
   .form__input-checkbox:checked + .form__checkbox::before {
@@ -163,5 +162,9 @@
 @media (min-width: $vp-1366) {
   .form {
     margin-bottom: 0;
+  }
+
+  .form__header {
+    margin-top: 48px;
   }
 }

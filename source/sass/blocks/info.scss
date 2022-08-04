@@ -1,23 +1,26 @@
+.info__wrapper {
+  margin-bottom: -9px;
+}
+
 .info__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 15px;
-  margin-top: 65px;
+  margin-top: 58px;
 }
 
 .info__header {
   display: block;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   width: 290px;
   height: 93px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-tangaroa;
 }
 
 .info__address {
@@ -29,6 +32,7 @@
 }
 
 .info__address-image {
+  margin-top: 5px;
   margin-right: 10px;
 }
 
@@ -37,12 +41,11 @@
   width: 255px;
   height: 36px;
   margin: 0;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-tangaroa;
 }
 
 .info__number {
@@ -54,6 +57,7 @@
 }
 
 .info__number-image {
+  margin-top: 2px;
   margin-right: 10px;
 }
 
@@ -62,19 +66,18 @@
   width: 255px;
   height: 36px;
   margin: 0;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-tangaroa;
 }
 
 .info__map {
   display: block;
   width: 290px;
   height: 316px;
-  background-color: #011C40;
+  background-color: $color-tangaroa;
   margin: 0 auto;
   margin-bottom: 65px;
 }
@@ -107,6 +110,11 @@
   .info__header {
     width: 324px;
     height: 67px;
+    margin-top: 12px;
+  }
+
+  .info__address {
+    margin-right: 34px;
   }
 
   .info__address-text {
@@ -114,6 +122,7 @@
   }
 
   .info__number {
+    margin-right: 32px;
     margin-bottom: 0;
   }
 
@@ -130,7 +139,7 @@
   .info {
     display: flex;
     align-items: center;
-    min-height: 535px;
+    min-height: 546px;
   }
 
   .info__wrapper {
@@ -141,18 +150,28 @@
   .info__container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
     width: 500px;
   }
 
   .info__header {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 45px;
     width: 500px;
     height: 40px;
-  }
+      }
 
   .info__address {
     width: 500px;
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+
+  .info__address-image {
+    margin-top: 0;
   }
 
   .info__address-text {
@@ -162,6 +181,7 @@
 
   .info__number {
     margin-bottom: 0;
+    margin-top: 8px;
   }
 
   .info__map {

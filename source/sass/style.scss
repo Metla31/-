@@ -9,16 +9,13 @@
 // ---------------------------------
 
 @import "variables";
-@import "mixins";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/modal";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/intro";
@@ -30,7 +27,7 @@
 @import "blocks/page-footer";
 @import "blocks/footer-nav";
 @import "blocks/social";
-
+@import "blocks/mobile-nav.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

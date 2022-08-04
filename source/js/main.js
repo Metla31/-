@@ -6,7 +6,18 @@ import {initModals} from './modules/modals/init-modals';
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
-  // ---------------------------------
+
+  const openMenuButton = document.querySelector('.page-header__toggle');
+  const closeMenuButton = document.querySelector('.mobile-nav__toggle');
+  const menuOpen = document.querySelector('.mobile-nav');
+
+  openMenuButton.addEventListener('click', function() {
+    menuOpen.classList.add('mobile-nav--opened');
+  });
+
+  closeMenuButton.addEventListener('click', function() {
+    menuOpen.classList.remove('mobile-nav--opened');
+  });
 
   iosVhFix();
 
