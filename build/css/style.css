@@ -697,6 +697,10 @@ body {
   color: #f9fbfd;
 }
 
+.page-header__header-span {
+  display: block;
+}
+
 .page-header__text {
   margin-top: 11px;
   width: 200px;
@@ -1622,10 +1626,15 @@ body {
   }
 
   .page-header__header {
+    display: inline-block;
     width: 589px;
     height: 36px;
     font-size: 50px;
     line-height: 61px;
+  }
+
+  .page-header__header-span {
+    display: inline-block;
   }
 
   .page-header__text {
@@ -2180,7 +2189,7 @@ body {
   }
 
   .benefits__card-text {
-    width: 288px;
+    width: auto;
     min-height: 91px;
   }
 

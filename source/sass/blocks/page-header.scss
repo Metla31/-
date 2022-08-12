@@ -59,6 +59,10 @@
   color: $color-alice-blue;
 }
 
+.page-header__header-span {
+  display: block;
+}
+
 .page-header__text {
   margin-top: 11px;
   width: 200px;
@@ -105,10 +109,15 @@
   }
 
   .page-header__header {
+    display: inline-block;
     width: 589px;
     height: 36px;
     font-size: 50px;
     line-height: 61px;
+  }
+
+  .page-header__header-span {
+    display: inline-block;
   }
 
   .page-header__text {
