@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-.benefits__header {
+.benefits__wrapper h2 {
   margin-top: 57px;
   margin-bottom: 30px;
   font-style: normal;
@@ -53,7 +53,7 @@
   margin-top: 5px;
 }
 
-.benefits__card-header {
+.benefits__card h3 {
   margin: 0;
   margin-top: 20px;
   font-style: normal;
@@ -63,21 +63,21 @@
   color: $color-tangaroa;
 }
 
-.benefits__card--system .benefits__card-header {
+.benefits__card--system h3 {
   width: 133px;
   margin-top: 22px;
 }
 
-.benefits__card--zodiac .benefits__card-header {
+.benefits__card--zodiac h3 {
   width: 150px;
   margin-top: 26px;
 }
 
-.benefits__card--liner .benefits__card-header {
+.benefits__card--liner h3 {
   width: 170px;
 }
 
-.benefits__card-text {
+.benefits__card p {
   margin: 0;
   margin-top: 9px;
   font-style: normal;
@@ -92,7 +92,7 @@
     background-image: url("/img/benefits_bg.png");
   }
 
-  .benefits__header {
+  .benefits__wrapper h2 {
     font-size: 26px;
     margin-top: 90px;
     margin-bottom: 47px;
@@ -120,13 +120,13 @@
     margin-top: 7px;
   }
 
-  .benefits__card-header {
+  .benefits__card h3 {
     margin-bottom: 12px;
     width: 170px;
     min-height: 38px;
   }
 
-  .benefits__card-text {
+  .benefits__card p {
     margin: 0;
     width: 167px;
     min-height: 151px;
@@ -138,7 +138,7 @@
     background-image: url("/img/benefits_bg.png");
   }
 
-  .benefits__header {
+  .benefits__wrapper h2 {
     font-size: 28px;
     margin-top: 110px;
     margin-bottom: 49px;
@@ -175,25 +175,25 @@
     margin-top: 38px;
   }
 
-  .benefits__card-header {
+  .benefits__card h3 {
     margin-bottom: 0;
   }
 
-  .benefits__card--system .benefits__card-header {
+  .benefits__card--system h3 {
     width: 300px;
     margin-top: 25px;
   }
 
-  .benefits__card--zodiac .benefits__card-header {
+  .benefits__card--zodiac h3 {
     width: 300px;
     margin-top: 28px;
   }
 
-  .benefits__card--liner .benefits__card-header {
+  .benefits__card--liner h3 {
     width: 300px;
   }
 
-  .benefits__card-text {
+  .benefits__card p {
     width: auto;
     min-height: 91px;
   }

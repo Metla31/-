@@ -10,7 +10,7 @@
   margin-top: 58px;
 }
 
-.info__header {
+.info__container h2 {
   display: block;
   margin: 0;
   margin-bottom: 42px;
@@ -36,7 +36,7 @@
   margin-right: 10px;
 }
 
-.info__address-text {
+.info__address p {
   display: block;
   width: 255px;
   height: 36px;
@@ -61,7 +61,7 @@
   margin-right: 10px;
 }
 
-.info__number-text {
+.info__number p {
   display: block;
   width: 255px;
   height: 36px;
@@ -107,7 +107,7 @@
     margin: 0;
   }
 
-  .info__header {
+  .info__container h2 {
     width: 324px;
     height: 67px;
     margin-top: 12px;
@@ -117,7 +117,7 @@
     margin-right: 34px;
   }
 
-  .info__address-text {
+  .info__address p {
     width: 255px;
   }
 
@@ -156,7 +156,7 @@
     width: 500px;
   }
 
-  .info__header {
+  .info__container h2 {
     margin: 0;
     margin-top: 10px;
     margin-bottom: 45px;
@@ -174,7 +174,7 @@
     margin-top: 0;
   }
 
-  .info__address-text {
+  .info__address p {
     width: 417px;
     min-height: 12px;
   }

@@ -22,7 +22,7 @@
   margin-bottom: 46px;
 }
 
-.booking__header {
+.booking h2 {
   margin-bottom: 25px;
   width: 194px;
   height: 49px;
@@ -33,7 +33,7 @@
   color: $color-tangaroa;
 }
 
-.booking__text {
+.booking p {
   margin: 0;
   width: 257px;
   height: 56px;
@@ -55,14 +55,14 @@
     margin-top: 62px;
   }
 
-  .booking__header {
+  .booking h2 {
     margin-bottom: 30px;
     width: 419px;
     height: 25px;
     font-size: 34px;
   }
 
-  .booking__text {
+  .booking p {
     margin: 0;
     width: 352px;
     min-height: 40px;
@@ -96,7 +96,7 @@
     min-height: 90px;
   }
 
-  .booking__header {
+  .booking h2 {
     margin: 0;
     margin-bottom: 30px;
     width: 493px;
@@ -106,7 +106,7 @@
     line-height: 150%;
   }
 
-  .booking__text {
+  .booking p {
     margin: 0;
     width: 400px;
     min-height: 40px;
