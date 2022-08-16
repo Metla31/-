@@ -11,11 +11,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const closeMenuButton = document.querySelector('.mobile-nav__toggle');
   const menuOpen = document.querySelector('.mobile-nav');
 
-  openMenuButton.addEventListener('click', function() {
+  openMenuButton.addEventListener('click', function () {
     menuOpen.classList.add('mobile-nav--opened');
   });
 
-  closeMenuButton.addEventListener('click', function() {
+  closeMenuButton.addEventListener('click', function () {
     menuOpen.classList.remove('mobile-nav--opened');
   });
 

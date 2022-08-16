@@ -7,6 +7,14 @@
     <meta name="description" content="Описание проекта">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" as="font" href="./fonts/montserrat-bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-bold.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-medium.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-medium.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-semibold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-semibold.woff2" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <!--header start-->
@@ -108,26 +116,29 @@
         <h2 class="upcoming__header">Ближайшие круизы</h2>
         <div class="upcoming__card-wrapper">
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/astoria.jpg" srcset="./img/astoria@2x.jpg 2x" alt="astoria" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/astoria.webp, ./img/astoria@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/astoria.jpg" srcset="./img/astoria@2x.jpg 2x" alt="astoria" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Aстория”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -136,26 +147,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/mimion.jpg" srcset="./img/mimion@2x.jpg 2x" alt="eline" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/mimion.webp, ./img/mimion@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/mimion.jpg" srcset="./img/mimion@2x.jpg 2x" alt="eline" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Элайн”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -164,26 +178,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/atlantis.jpg" srcset="./img/atlantis@2x.jpg 2x" alt="atlantis" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/atlantis.webp, ./img/atlantis@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/atlantis.jpg" srcset="./img/atlantis@2x.jpg 2x" alt="atlantis" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Атлантис”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -192,26 +209,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/odysseus.jpg" srcset="./img/odysseus@2x.jpg 2x" alt="odysseus" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/odysseus.webp, ./img/odysseus@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/odysseus.jpg" srcset="./img/odysseus@2x.jpg 2x" alt="odysseus" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Одиссей”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -220,26 +240,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/olympia.jpg" srcset="./img/olympia@2x.jpg 2x" alt="olympia" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/olympia.webp, ./img/olympia@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/olympia.jpg" srcset="./img/olympia@2x.jpg 2x" alt="olympia" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Олимпия”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -248,26 +271,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/aurora.jpg" srcset="./img/aurora@2x.jpg 2x" alt="aurora" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/aurora.webp, ./img/aurora@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/aurora.jpg" srcset="./img/aurora@2x.jpg 2x" alt="aurora" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Аврора”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -276,26 +302,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/leonor.jpg" srcset="./img/leonor@2x.jpg 2x" alt="leonor" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/leonor.webp, ./img/leonor@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/leonor.jpg" srcset="./img/leonor@2x.jpg 2x" alt="leonor" width="270" height="386">
+            </picture> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Леонор”</h3>
             <div class="upcoming__hover-wrapper">
               <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -304,26 +333,29 @@
             </div>
           </div>
           <div class="upcoming__card">
-            <img class="upcoming__img" src="./img/mimion.jpg" srcset="./img/mimion@2x.jpg 2x" alt="minion-1" width="270" height="386"> <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
+            <picture>
+              <source srcset="./img/mimion.webp, ./img/mimion@2x.webp 2x" type="image/webp">
+              <img class="upcoming__img" src="./img/mimion.jpg" srcset="./img/mimion@2x.jpg 2x" alt="minion-1" width="270" height="386">
+            </picture>  <!-- mobile 270x386 / tablet 309x386 / desktop 260x366 -->
             <h3 class="upcoming__img-header">Круиз “Минион - 1”</h3>
             <div class="upcoming__hover-wrapper">
-              <h3 class="upcoming__hover-header">Круиз “Элайн”</h3>
+              <h3>Круиз “Элайн”</h3>
               <ul class="upcoming__list">
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Маршрут</h4>
-                  <p class="upcoming__info-text">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Порт отправления</h4>
-                  <p class="upcoming__info-text">Буэнос-Айрес</p>
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Продолжительность</h4>
-                  <p class="upcoming__info-text">20 дней</p>
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
                 </li>
                 <li class="upcoming__item">
-                  <h4 class="upcoming__info-header">Цена</h4>
-                  <p class="upcoming__info-text">от 14500 $</p>
+                  <h4>Цена</h4>
+                  <p>от 14500 $</p>
                 </li>
               </ul>
               <a class="upcoming__link" href="#">
@@ -355,10 +387,10 @@
               <input type="email" placeholder="Email" id="email">
             </label>
             <div class="form__checkbox-wrapper">
-              <label for="checkbox">
-                <input class="visually-hidden" type="checkbox" id="checkbox" checked>
-                <p></p>
-                <span>Я согласен на обработку моих персональных данных</span>
+              <label class="form__label-checkbox" for="bridge">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
+                <span class="form__checkbox"></span>
+                <span class="form__checkbox-text">Я согласен на обработку моих персональных данных</span>
               </label>
             </div>
             <button type="submit"><span>Оставить заявку</span></button>
