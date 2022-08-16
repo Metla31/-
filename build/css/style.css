@@ -561,7 +561,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -1168,8 +1168,8 @@ body {
   width: 290px;
   min-height: 460px;
   background-color: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   color: #f9fbfd;
 }
 
@@ -1269,7 +1269,7 @@ body {
 }
 
 .form__input-checkbox:checked + .form__checkbox::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 6px;
@@ -1601,6 +1601,18 @@ body {
   }
 } */
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 767px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 767px), (min-resolution: 192dpi) and (min-width: 767px), (min-resolution: 2dppx) and (min-width: 767px) {
+  .page-header {
+    background-image: url("../img/header_bg_mobile@2x.png");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .page-header {
+    background-image: url("../img/header_bg@2x.png");
+  }
+}
+
 @media (min-width: 768px) {
   .page-header {
     min-height: 638px;
@@ -1688,7 +1700,6 @@ body {
     font-size: 14px;
     margin-left: 24px;
     font-weight: 500;
-    font-size: 14px;
     line-height: 17px;
     color: #f9fbfd;
   }
@@ -2017,7 +2028,7 @@ body {
   }
 
   .footer-nav__item:last-child {
-    margin: 0 20px 13px 0px;
+    margin: 0 20px 13px 0;
   }
 
   .social {
@@ -2031,9 +2042,9 @@ body {
   }
 }
 
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 192dpi) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
   .page-header {
-    background-image: url("../img/header_bg@2x.png");
+    background-image: url("../img/header_bg_desktop@2x.png");
   }
 }
 
@@ -2044,7 +2055,7 @@ body {
 
   .page-header__wrapper {
     min-height: 650px;
-    padding: 35px 0px;
+    padding: 35px 0;
   }
 
   .page-header__logo {
@@ -2068,7 +2079,7 @@ body {
     height: 39px;
     font-size: 54px;
     line-height: 66px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 8px;
   }
 
@@ -2077,7 +2088,7 @@ body {
     min-height: 15px;
     font-size: 20px;
     line-height: 24px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .page-header__toggle {
@@ -2429,18 +2440,5 @@ body {
     display: block;
     width: 20px;
     height: 19.5px;
-  }
-}
-
-@media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
-  .page-header {
-    background-image: url("../img/header_bg_desktop@2x.png");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .page-header {
-    background-image: url("../img/header_bg_mobile@2x.png");
-    background-size: cover;
   }
 }
