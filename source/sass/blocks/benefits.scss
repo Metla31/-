@@ -133,7 +133,7 @@
   }
 }
 
-@media (min-width: $vp-1366) {
+@media (min-width: $vp-1024) {
   .benefits__wrapper {
     background-image: url("/img/benefits_bg.png");
   }
@@ -150,7 +150,7 @@
   }
 
   .benefits__card {
-    width: 360px;
+    width: 300px;
     min-height: 241px;
     margin: 0;
     padding-top: 0;
@@ -180,21 +180,28 @@
   }
 
   .benefits__card--system h3 {
-    width: 300px;
+    width: 285px;
     margin-top: 25px;
   }
 
   .benefits__card--zodiac h3 {
-    width: 300px;
+    width: 285px;
     margin-top: 28px;
   }
 
   .benefits__card--liner h3 {
-    width: 300px;
+    width: 285px;
   }
 
   .benefits__card p {
     width: auto;
     min-height: 91px;
+  }
+}
+
+
+@media (min-width: $vp-1366) {
+  .benefits__card {
+    width: 360px;
   }
 }

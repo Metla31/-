@@ -171,7 +171,7 @@
   }
 }
 
-@media (min-width: $vp-1366) {
+@media (min-width: $vp-1024) {
   .upcoming__header {
     margin-top: 110px;
     width: 302px;
@@ -185,11 +185,11 @@
 
   .upcoming__card-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin: 0 auto;
-    width: 1130px;
+    width: 840px;
     margin-bottom: 120px;
   }
 
@@ -206,5 +206,14 @@
   .upcoming__link {
     width: 210px;
     height: 40px;
+  }
+}
+
+
+@media (min-width: $vp-1366) {
+  .upcoming__card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    width: 1130px;
   }
 }

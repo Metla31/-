@@ -2042,15 +2042,9 @@ body {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 192dpi) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
+@media (min-width: 1024px) {
   .page-header {
-    background-image: url("../img/header_bg_desktop@2x.png");
-  }
-}
-
-@media (min-width: 1366px) {
-  .page-header {
-    background-image: url("../img/header_bg_desktop.png");
+    background-image: url("../img/header_bg.png");
   }
 
   .page-header__wrapper {
@@ -2064,13 +2058,13 @@ body {
   }
 
   .page-header__nav-container {
-    padding: 0 103px;
+    padding: 0 50px;
   }
 
   .page-header__info-wrapper {
     width: 636px;
     min-height: 85px;
-    margin-left: 198px;
+    margin-left: 110px;
     margin-top: 197px;
   }
 
@@ -2107,6 +2101,7 @@ body {
   }
 
   .intro__wrapper {
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2117,16 +2112,17 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 1160px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 1024px;
     min-height: 301px;
-    margin: 0 auto;
     margin-top: 119px;
     margin-bottom: 56px;
-    gap: 88px;
+    gap: 0;
   }
 
   .intro__info-wrapper {
-    width: 512px;
+    width: 430px;
   }
 
   .intro__info-wrapper h2 {
@@ -2138,7 +2134,7 @@ body {
   }
 
   .intro__info-wrapper p {
-    width: 512px;
+    width: 430px;
     margin-top: 40px;
     min-height: 108px;
     font-size: 16px;
@@ -2166,7 +2162,7 @@ body {
   }
 
   .benefits__card {
-    width: 360px;
+    width: 300px;
     min-height: 241px;
     margin: 0;
     padding-top: 0;
@@ -2196,17 +2192,17 @@ body {
   }
 
   .benefits__card--system h3 {
-    width: 300px;
+    width: 285px;
     margin-top: 25px;
   }
 
   .benefits__card--zodiac h3 {
-    width: 300px;
+    width: 285px;
     margin-top: 28px;
   }
 
   .benefits__card--liner h3 {
-    width: 300px;
+    width: 285px;
   }
 
   .benefits__card p {
@@ -2228,13 +2224,13 @@ body {
   .upcoming__card-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin: 0 auto;
-    width: 1130px;
+    width: 840px;
     margin-bottom: 120px;
   }
 
@@ -2272,9 +2268,11 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 1040px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 1024px;
     min-height: 455px;
-    gap: 144px;
+    gap: 0;
   }
 
   .booking__info {
@@ -2312,6 +2310,55 @@ body {
 
   .form h3 {
     margin-top: 48px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 192dpi) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
+  .page-header {
+    background-image: url("../img/header_bg_desktop@2x.png");
+  }
+}
+
+@media (min-width: 1366px) {
+  .page-header {
+    background-image: url("../img/header_bg_desktop.png");
+  }
+
+  .page-header__nav-container {
+    padding: 0 103px;
+  }
+
+  .page-header__info-wrapper {
+    margin-left: 198px;
+  }
+
+  .intro__wrapper {
+    width: 1160px;
+    gap: 88px;
+  }
+
+  .intro__info-wrapper {
+    width: 512px;
+  }
+
+  .intro__info-wrapper p {
+    width: 512px;
+  }
+
+  .benefits__card {
+    width: 360px;
+  }
+
+  .upcoming__card-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    width: 1130px;
+  }
+
+  .booking__wrapper {
+    width: 1040px;
+    gap: 144px;
   }
 
   .info {
