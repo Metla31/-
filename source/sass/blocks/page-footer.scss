@@ -36,6 +36,24 @@
   }
 }
 
+@media (min-width: $vp-1024) {
+  .page-footer__wrapper {
+    height: 138px;
+  }
+
+  .page-footer__link {
+    width: 70px;
+    height: 38px;
+    margin: 0;
+    margin-right: 33px;
+  }
+
+  .page-footer__logo {
+    width: 70px;
+    height: 38px;
+  }
+}
+
 @media (min-width: $vp-1366) {
   .page-footer__wrapper {
     padding-left: 103px;

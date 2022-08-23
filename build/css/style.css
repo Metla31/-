@@ -561,7 +561,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -1010,7 +1010,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  overflow: hidden;
+  overflow: auto;
   padding-left: 25px;
   background-color: #011c40;
   width: 270px;
@@ -1078,6 +1078,10 @@ body {
   width: 220px;
   height: 40px;
   background-color: #f9fbfd;
+}
+
+.upcoming__link:hover {
+  background-color: #729fc8;
 }
 
 .upcoming__link-text {
@@ -1268,6 +1272,10 @@ body {
   margin-right: 8px;
 }
 
+.form__checkbox:hover {
+  background-color: #729fc8;
+}
+
 .form__input-checkbox:checked + .form__checkbox::before {
   content: "";
   display: block;
@@ -1297,6 +1305,10 @@ body {
   background-color: #f9fbfd;
   border: 0;
   margin-bottom: 40px;
+}
+
+.form button:hover {
+  background-color: #729fc8;
 }
 
 .form button span {
@@ -2311,55 +2323,6 @@ body {
   .form h3 {
     margin-top: 48px;
   }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 192dpi) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
-  .page-header {
-    background-image: url("../img/header_bg_desktop@2x.png");
-  }
-}
-
-@media (min-width: 1366px) {
-  .page-header {
-    background-image: url("../img/header_bg_desktop.png");
-  }
-
-  .page-header__nav-container {
-    padding: 0 103px;
-  }
-
-  .page-header__info-wrapper {
-    margin-left: 198px;
-  }
-
-  .intro__wrapper {
-    width: 1160px;
-    gap: 88px;
-  }
-
-  .intro__info-wrapper {
-    width: 512px;
-  }
-
-  .intro__info-wrapper p {
-    width: 512px;
-  }
-
-  .benefits__card {
-    width: 360px;
-  }
-
-  .upcoming__card-wrapper {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    width: 1130px;
-  }
-
-  .booking__wrapper {
-    width: 1040px;
-    gap: 144px;
-  }
 
   .info {
     display: -webkit-box;
@@ -2372,7 +2335,7 @@ body {
   }
 
   .info__wrapper {
-    width: 1160px;
+    width: 1000px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -2430,12 +2393,9 @@ body {
     order: -1;
     width: 560px;
     height: 306px;
-    margin-right: 100px;
   }
 
   .page-footer__wrapper {
-    padding-left: 103px;
-    padding-right: 103px;
     height: 138px;
   }
 
@@ -2461,7 +2421,7 @@ body {
 
   .social {
     margin: 0;
-    width: 120px;
+    width: 140px;
     height: 20px;
   }
 
@@ -2487,5 +2447,80 @@ body {
     display: block;
     width: 20px;
     height: 19.5px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 192dpi) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
+  .page-header {
+    background-image: url("../img/header_bg_desktop@2x.png");
+  }
+}
+
+@media (min-width: 1366px) {
+  .page-header {
+    background-image: url("../img/header_bg_desktop.png");
+  }
+
+  .page-header__nav-container {
+    padding: 0 103px;
+  }
+
+  .page-header__info-wrapper {
+    margin-left: 198px;
+  }
+
+  .intro__wrapper {
+    width: 1160px;
+    gap: 88px;
+  }
+
+  .intro__info-wrapper {
+    width: 512px;
+  }
+
+  .intro__info-wrapper p {
+    width: 512px;
+  }
+
+  .benefits__card {
+    width: 360px;
+  }
+
+  .upcoming__card-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    width: 1130px;
+  }
+
+  .booking__wrapper {
+    width: 1040px;
+    gap: 144px;
+  }
+
+  .info__wrapper {
+    width: 1160px;
+  }
+
+  .info__map {
+    margin-right: 100px;
+  }
+
+  .page-footer__wrapper {
+    padding-left: 103px;
+    padding-right: 103px;
+    height: 138px;
+  }
+
+  .page-footer__link {
+    width: 70px;
+    height: 38px;
+    margin: 0;
+    margin-right: 33px;
+  }
+
+  .page-footer__logo {
+    width: 70px;
+    height: 38px;
   }
 }

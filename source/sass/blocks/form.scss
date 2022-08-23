@@ -65,6 +65,10 @@
   margin-right: 8px;
 }
 
+.form__checkbox:hover {
+  background-color: $color-glacier;
+}
+
 .form__input-checkbox:checked + .form__checkbox::before {
   content: "";
   display: block;
@@ -94,6 +98,10 @@
   background-color: $color-alice-blue;
   border: 0;
   margin-bottom: 40px;
+}
+
+.form button:hover {
+  background-color: $color-glacier;
 }
 
 .form button span {
