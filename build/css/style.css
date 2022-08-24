@@ -839,7 +839,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("/img/benefits_bg.png");
+  background-image: url("../img/benefits_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1098,7 +1098,7 @@ body {
 }
 
 .booking {
-  background-image: url("/img/booking_bg.png");
+  background-image: url("../img/booking_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1851,10 +1851,6 @@ body {
     height: 40px;
   }
 
-  .booking {
-    background-image: url("/img/booking_bg.png");
-  }
-
   .booking__info {
     width: 419px;
     min-height: 90px;
@@ -2269,7 +2265,6 @@ body {
     -ms-flex-align: center;
     align-items: center;
     min-height: 555px;
-    background-image: url("/img/booking_bg.png");
   }
 
   .booking__wrapper {
