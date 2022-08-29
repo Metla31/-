@@ -828,6 +828,12 @@ body {
   margin-bottom: 65px;
 }
 
+.benefits {
+  background-image: url("../img/benefits_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .benefits__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,9 +845,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../img/benefits_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .benefits__wrapper h2 {
@@ -977,7 +980,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  overflow: hidden;
   width: 270px;
   height: 386px;
   margin-bottom: 30px;
@@ -1010,7 +1012,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding-left: 25px;
   background-color: #011c40;
   width: 270px;
@@ -1195,7 +1198,9 @@ body {
   margin-bottom: 27px;
 }
 
-.form input {
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="email"] {
   border: 0;
   width: 230px;
   height: 43px;
@@ -1273,6 +1278,10 @@ body {
 }
 
 .form__checkbox:hover {
+  background-color: #729fc8;
+}
+
+.form__input-checkbox:focus + .form__checkbox {
   background-color: #729fc8;
 }
 
@@ -1584,7 +1593,7 @@ body {
   display: block;
   background-color: transparent;
   cursor: pointer;
-  background-image: url("/img/svg/close.svg");
+  background-image: url("../img/svg/close.svg");
   background-position: center;
   background-repeat: no-repeat;
   height: 24px;
@@ -1756,10 +1765,6 @@ body {
     height: 264px;
   }
 
-  .benefits__wrapper {
-    background-image: url("/img/benefits_bg.png");
-  }
-
   .benefits__wrapper h2 {
     font-size: 26px;
     margin-top: 90px;
@@ -1886,7 +1891,9 @@ body {
     margin-bottom: 29px;
   }
 
-  .form input {
+  .form input[type="text"],
+  .form input[type="number"],
+  .form input[type="email"] {
     width: 303px;
     height: 43px;
     padding: 11px 0;
@@ -2152,10 +2159,6 @@ body {
     margin: 0;
     width: 560px;
     height: 301px;
-  }
-
-  .benefits__wrapper {
-    background-image: url("/img/benefits_bg.png");
   }
 
   .benefits__wrapper h2 {
