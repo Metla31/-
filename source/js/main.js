@@ -36,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const error = document.createElement('div');
     error.className = 'error';
     error.style.color = 'red';
+    error.style.fontSize = '10px';
     error.innerHTML = text;
     return error;
   };
