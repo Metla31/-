@@ -10,6 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const openMenuButton = document.querySelector('.page-header__toggle');
   const closeMenuButton = document.querySelector('.mobile-nav__toggle');
   const menuOpen = document.querySelector('.mobile-nav');
+  const body = document.querySelector('body');
+  const mobileMenu = document.querySelector('.mobile-nav');
 
   if (openMenuButton) {
     openMenuButton.addEventListener('click', function () {
@@ -23,8 +25,24 @@ window.addEventListener('DOMContentLoaded', () => {
     closeMenuButton.addEventListener('click', function () {
       if (menuOpen) {
         menuOpen.classList.remove('mobile-nav--opened');
+        body.classList.remove('body-lock');
+        window.scrollTo(0, body.dataset.scrollY);
       }
     });
+  }
+
+  openMenuButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    body.dataset.scrollY = getBodyScrollTop();
+
+    body.style.top = `-${body.dataset.scrollY}px`;
+    mobileMenu.classList.add('mobile-nav--opened');
+    body.classList.add('body-lock');
+  });
+
+  function getBodyScrollTop() {
+    return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
   }
 
   // Валидация формы
@@ -63,7 +81,6 @@ window.addEventListener('DOMContentLoaded', () => {
     removeValidation();
     checkFieldsPresence();
   });
-
 
   iosVhFix();
 

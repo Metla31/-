@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -563,6 +565,12 @@ body {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   background-color: #f9fbfd;
+}
+
+.body-lock {
+  overflow-y: scroll;
+  /*проблемное место */
+  position: fixed;
 }
 
 .wrapper {
@@ -1617,6 +1625,7 @@ body {
 }
 
 .mobile-nav__list {
+  overflow-y: auto;
   width: 240px;
   list-style: none;
   font-size: 18px;

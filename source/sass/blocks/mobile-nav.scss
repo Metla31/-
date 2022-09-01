@@ -64,6 +64,7 @@
 }
 
 .mobile-nav__list {
+  overflow-y: auto;
   width: 240px;
   list-style: none;
   font-size: 18px;
