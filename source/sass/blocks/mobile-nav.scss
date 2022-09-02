@@ -25,8 +25,7 @@
   background-color: $color-alice-blue;
 }
 
-.mobile-nav::before {
-  content: '';
+.mobile-nav__backdrop {
   cursor: pointer;
   position: fixed;
   width: 35px;

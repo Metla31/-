@@ -12,6 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const menuOpen = document.querySelector('.mobile-nav');
   const body = document.querySelector('body');
   const mobileMenu = document.querySelector('.mobile-nav');
+  const mobileMenuBackdrop = document.querySelector('.mobile-nav__backdrop');
+  const mobileMenuLink = document.querySelectorAll('.mobile-nav__link');
+
+  // Открывает мобильное меню
 
   if (openMenuButton) {
     openMenuButton.addEventListener('click', function () {
@@ -20,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Закрывает мобильное меню на кнопку
 
   if (closeMenuButton) {
     closeMenuButton.addEventListener('click', function () {
@@ -31,11 +37,35 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Закрывает мобильное меню на оверлей
+
+  if (mobileMenuBackdrop) {
+    mobileMenuBackdrop.addEventListener('click', function () {
+      if (menuOpen) {
+        menuOpen.classList.remove('mobile-nav--opened');
+        body.classList.remove('body-lock');
+        window.scrollTo(0, body.dataset.scrollY);
+      }
+    });
+  }
+
+  // Реализация ссылок в мобильном меню
+
+  if (mobileMenuLink.length > 0 && menuOpen) {
+    mobileMenuLink.forEach(function (element) {
+      element.addEventListener('click', function () {
+        menuOpen.classList.remove('mobile-nav--opened');
+        body.classList.remove('body-lock');
+        window.scrollTo(0, body.dataset.scrollY);
+      });
+    });
+  }
+
+  // Лок скролла страницы при открытом мобильном меню
+
   openMenuButton.addEventListener('click', (e) => {
     e.preventDefault();
-
     body.dataset.scrollY = getBodyScrollTop();
-
     body.style.top = `-${body.dataset.scrollY}px`;
     mobileMenu.classList.add('mobile-nav--opened');
     body.classList.add('body-lock');

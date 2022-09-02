@@ -121,7 +121,7 @@
 @media (min-width: $vp-768) {
   .form {
     width: 403px;
-    height: 455px;
+    min-height: 455px;
     margin-bottom: 95px;
   }
 

@@ -889,7 +889,7 @@ body {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  width: 290px;
+  min-width: 290px;
   min-height: 250px;
   margin-bottom: 30px;
   background-color: #f9fbfd;
@@ -988,7 +988,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 270px;
+  min-width: 270px;
   height: 386px;
   margin-bottom: 30px;
   color: #f9fbfd;
@@ -1577,8 +1577,7 @@ body {
   background-color: #f9fbfd;
 }
 
-.mobile-nav::before {
-  content: '';
+.mobile-nav__backdrop {
   cursor: pointer;
   position: fixed;
   width: 35px;
@@ -1807,7 +1806,7 @@ body {
   }
 
   .benefits__card {
-    width: 206px;
+    min-width: 206px;
     min-height: 310px;
     margin: 0;
     padding-left: 20px;
@@ -1838,6 +1837,10 @@ body {
     margin-bottom: 49px;
     width: 281px;
     font-size: 26px;
+  }
+
+  .upcoming__img {
+    height: 386px;
   }
 
   .upcoming__card-wrapper {
@@ -1902,7 +1905,7 @@ body {
 
   .form {
     width: 403px;
-    height: 455px;
+    min-height: 455px;
     margin-bottom: 95px;
   }
 
@@ -2252,6 +2255,10 @@ body {
     margin-top: 110px;
     width: 302px;
     font-size: 28px;
+  }
+
+  .upcoming__img {
+    height: 100%;
   }
 
   .upcoming__img-header {
