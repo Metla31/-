@@ -998,15 +998,29 @@ body {
   color: #f9fbfd;
 }
 
+.upcoming__card-link {
+  width: 180px;
+  height: 25px;
+  position: absolute;
+  margin: 0;
+  bottom: 19px;
+  left: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f9fbfd;
+}
+
+.upcoming__card-link:focus {
+  border-radius: 4px;
+  border-color: #011c40;
+}
+
 .upcoming__card:last-child {
   margin-bottom: 65px;
 }
 
 .upcoming__img-header {
-  position: absolute;
   margin: 0;
-  bottom: 19px;
-  left: 25px;
   font-weight: 500;
   font-size: 18px;
   color: #f9fbfd;
@@ -1054,7 +1068,7 @@ body {
 }
 
 .upcoming__item {
-  height: 52px;
+  min-height: 52px;
 }
 
 .upcoming__item:first-child {
