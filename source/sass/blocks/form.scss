@@ -110,6 +110,10 @@
   background-color: $color-glacier;
 }
 
+.form button:focus {
+  border: 5px solid $color-glacier;
+}
+
 .form button span {
   font-style: normal;
   font-weight: 600;

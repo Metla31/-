@@ -131,6 +131,10 @@
   background-color: $color-glacier;
 }
 
+.upcoming__link:focus {
+  border: 5px solid $color-glacier;
+}
+
 .upcoming__link-text {
   display: block;
   font-style: normal;
