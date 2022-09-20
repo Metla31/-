@@ -3,7 +3,6 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  height: 16px;
   margin-bottom: 40px;
 }
 
@@ -37,7 +36,7 @@
 @media (min-width: $vp-768) {
   .social {
     margin: 0;
-    width: 120px;
+    flex: 0 0 120px;
     margin-left: 40px;
   }
 
@@ -50,8 +49,7 @@
 @media (min-width: $vp-1024) {
   .social {
     margin: 0;
-    width: 140px;
-    height: 20px;
+    flex: 0 0 140px;
   }
 
   .social__link {

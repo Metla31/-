@@ -112,6 +112,11 @@ window.addEventListener('DOMContentLoaded', () => {
     checkFieldsPresence();
   });
 
+  // Если работает скрипт удаляем класс
+
+  const htmlElement = document.getElementsByTagName('html');
+  htmlElement[0].classList.remove('no-script');
+
   iosVhFix();
 
   // Modules

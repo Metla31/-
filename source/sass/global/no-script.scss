@@ -1,0 +1,16 @@
+.no-script .mobile-nav--no-script {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+
+  .mobile-nav__wrapper {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.no-script .page-header__toggle {
+  display: none;
+}

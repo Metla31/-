@@ -663,6 +663,23 @@ main {
   transition: none !important;
 }
 
+.no-script .mobile-nav--no-script {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.no-script .mobile-nav--no-script .mobile-nav__wrapper {
+  position: static;
+  width: 100%;
+  height: auto;
+}
+
+.no-script .page-header__toggle {
+  display: none;
+}
+
 .page-header {
   position: relative;
   width: 100%;
@@ -1005,7 +1022,7 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-width: 270px;
+  width: 270px;
   height: 386px;
   margin-bottom: 30px;
   color: #f9fbfd;
@@ -1391,7 +1408,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 auto;
   margin-top: 58px;
 }
 
@@ -1524,6 +1541,8 @@ main {
   margin: 0;
   padding: 0;
   width: 285px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer-nav__item {
@@ -1554,7 +1573,6 @@ main {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 16px;
   margin-bottom: 40px;
 }
 
@@ -1795,9 +1813,9 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     width: 678px;
     min-height: 264px;
     margin: 0 auto;
@@ -1838,9 +1856,9 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin-bottom: 102px;
     gap: 30px;
   }
@@ -2070,7 +2088,7 @@ main {
     -ms-flex-align: center;
     align-items: center;
     margin: 0;
-    height: 120px;
+    min-height: 120px;
     width: 100%;
     padding-left: 45px;
     padding-right: 45px;
@@ -2087,7 +2105,7 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    height: 120px;
+    min-height: 120px;
   }
 
   .footer-nav__list {
@@ -2114,7 +2132,9 @@ main {
 
   .social {
     margin: 0;
-    width: 120px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
     margin-left: 40px;
   }
 
@@ -2493,8 +2513,9 @@ main {
 
   .social {
     margin: 0;
-    width: 140px;
-    height: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 140px;
+    flex: 0 0 140px;
   }
 
   .social__link {
