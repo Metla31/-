@@ -110,7 +110,7 @@
   .info__container h2 {
     width: 324px;
     height: 67px;
-    margin-top: 12px;
+    margin-top: 19px;
   }
 
   .info__address {
@@ -192,6 +192,10 @@
 }
 
 @media (min-width: $vp-1366) {
+  .info {
+    margin-bottom: 0;
+  }
+
   .info__wrapper {
     width: 1160px;
   }

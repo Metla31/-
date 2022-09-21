@@ -1577,26 +1577,21 @@ main {
 }
 
 .social__link {
-  margin-right: 23px;
+  display: block;
+  width: 16px;
   height: 16px;
 }
 
 .social__link--facebook {
-  display: block;
-  width: 9px;
-  height: 16px;
+  margin-right: 16px;
 }
 
 .social__link--instagram {
-  display: block;
-  width: 16px;
-  height: 16px;
+  margin-right: 23px;
 }
 
 .social__link--twitter {
-  display: block;
-  width: 16px;
-  height: 13px;
+  margin-right: 23px;
 }
 
 .social__link:last-child {
@@ -1805,6 +1800,10 @@ main {
     color: #f9fbfd;
   }
 
+  .intro {
+    margin-bottom: 4px;
+  }
+
   .intro__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1826,14 +1825,11 @@ main {
 
   .intro__info-wrapper h2 {
     margin: 0;
-    margin-top: 6px;
-    margin-bottom: -11px;
   }
 
   .intro__info-wrapper p {
     display: block;
     margin: 0;
-    margin-top: 30px;
     width: 324px;
     min-height: 180px;
   }
@@ -1872,6 +1868,14 @@ main {
 
   .benefits__card:last-child {
     margin-bottom: 0;
+  }
+
+  .benefits__card--zodiac {
+    padding-right: 0px;
+  }
+
+  .benefits__card--system {
+    padding-right: 20px;
   }
 
   .benefits__card-image {
@@ -1917,6 +1921,11 @@ main {
   .upcoming__card {
     width: 309px;
     margin: 0;
+  }
+
+  .upcoming__card-link {
+    bottom: 28px;
+    left: 35px;
   }
 
   .upcoming__card:last-child {
@@ -2053,7 +2062,7 @@ main {
   .info__container h2 {
     width: 324px;
     height: 67px;
-    margin-top: 12px;
+    margin-top: 19px;
   }
 
   .info__address {
@@ -2090,14 +2099,14 @@ main {
     margin: 0;
     min-height: 120px;
     width: 100%;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 38px;
+    padding-right: 12px;
   }
 
   .page-footer__link {
     width: 38px;
     height: 20px;
-    margin: 4px 26px 0 5px;
+    margin: 4px 23px 0 5px;
   }
 
   .footer-nav {
@@ -2139,7 +2148,7 @@ main {
   }
 
   .social__link {
-    margin-right: 22px;
+    margin-right: 18px;
   }
 
   .mobile-nav--opened {
@@ -2514,12 +2523,14 @@ main {
   .social {
     margin: 0;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 140px;
-    flex: 0 0 140px;
+    -ms-flex: 0 0 105px;
+    flex: 0 0 105px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .social__link {
-    margin-right: 19px;
     width: 20px;
     height: 20px;
   }
@@ -2569,6 +2580,7 @@ main {
 
   .intro__info-wrapper {
     width: 512px;
+    margin-top: -64px;
   }
 
   .intro__info-wrapper p {
@@ -2579,6 +2591,22 @@ main {
     width: 360px;
   }
 
+  .benefits__card--liner h3 {
+    width: 290px;
+  }
+
+  .benefits__card--system p {
+    width: 280px;
+  }
+
+  .benefits__card--zodiac h3 {
+    width: 300px;
+  }
+
+  .benefits__card--zodiac p {
+    width: 250px;
+  }
+
   .upcoming__card-wrapper {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2586,9 +2614,22 @@ main {
     width: 1130px;
   }
 
+  .upcoming__card-link {
+    bottom: 22px;
+    left: 30px;
+  }
+
   .booking__wrapper {
     width: 1040px;
     gap: 144px;
+  }
+
+  .booking p {
+    width: 390px;
+  }
+
+  .info {
+    margin-bottom: 0;
   }
 
   .info__wrapper {
@@ -2601,7 +2642,7 @@ main {
 
   .page-footer__wrapper {
     padding-left: 103px;
-    padding-right: 103px;
+    padding-right: 107px;
     height: 138px;
   }
 

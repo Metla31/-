@@ -175,6 +175,11 @@
     margin: 0;
   }
 
+  .upcoming__card-link {
+    bottom: 28px;
+    left: 35px;
+  }
+
   .upcoming__card:last-child {
     margin-bottom: 0;
   }
@@ -245,5 +250,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     width: 1130px;
+  }
+
+  .upcoming__card-link {
+    bottom: 22px;
+    left: 30px;
   }
 }
