@@ -412,30 +412,30 @@
               Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
             </p>
           </div>
-          <form action="https://echo.htmlacademy.ru/" method="GET" class="booking__form form">
+          <form action="https://echo.htmlacademy.ru/" method="get" class="booking__form form">
             <h3>
               Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
             </h3>
             <label for="name">
               <span class="visually-hidden">Имя</span>
-              <input class="field" type="text" placeholder="Имя" id="name">
+              <input class="field" type="text" placeholder="Имя" id="name" name="Имя">
             </label>
             <label for="tel">
               <span class="visually-hidden">Телефон</span>
-              <input class="field" type="number" placeholder="Телефон" id="tel">
+              <input class="field" type="number" placeholder="Телефон" id="tel" name="Телефон">
             </label>
             <label for="email">
               <span class="visually-hidden">Email</span>
-              <input class="field" type="email" placeholder="Email" id="email">
+              <input class="field" type="email" placeholder="Email" id="email" name="Email">
             </label>
             <div class="form__checkbox-wrapper">
-              <label class="form__label-checkbox" for="bridge">
-                <input class="form__input-checkbox visually-hidden field" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
+              <label class="form__label-checkbox" for="agreement">
+                <input class="form__input-checkbox visually-hidden field" type="checkbox" id="agreement" name="Согласие" value="agreement" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__checkbox-text">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
               </label>
             </div>
-            <button type="submit"><span>Оставить заявку</span></button>
+            <button type="submit" value="Отправить"><span>Оставить заявку</span></button>
           </form>
         </div>
       </section>

@@ -404,7 +404,7 @@ template {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat-semiBold.woff2") format("woff2"), url("../fonts/montserrat-semiBold.woff") format("woff");
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -2223,9 +2223,6 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 1024px;
@@ -2580,7 +2577,7 @@ main {
 
   .intro__info-wrapper {
     width: 512px;
-    margin-top: -64px;
+    margin-top: 59px;
   }
 
   .intro__info-wrapper p {

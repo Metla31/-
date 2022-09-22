@@ -110,6 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     removeValidation();
     checkFieldsPresence();
+    form.submit();
   });
 
   // Если работает скрипт удаляем класс
